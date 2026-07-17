@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --kuning: #FFE699;
+  --coklat: #5A3E2B;
+  --krem: #FFF8E6;
+}
+body {
+  color: var(--coklat);
+  background: var(--krem);
+  background-image: radial-gradient(#FFD96633 20%, transparent 20%), radial-gradient(#FFD96633 20%, transparent 20%);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+}
+.card-item {
+  @apply bg-white rounded-xl p-3 border-2 border-yellow-300 hover:border-yellow-500 transition-all;
+}
+.paw-bg::before {
+  content: "🐾";
+  position: absolute;
+  opacity: 0.1;
+  font-size: 4rem;
+}
+
